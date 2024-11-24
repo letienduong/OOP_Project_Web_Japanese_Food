@@ -1,0 +1,350 @@
+/* Đảm bảo trang chiếm toàn bộ chiều cao */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Đảm bảo chiều cao của html và body là 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nội dung chính sẽ chiếm không gian còn lại */
+.main-wrapper {
+    flex: 1;
+    padding-top: 70px; /* Khoảng trống cho header nếu có */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Định dạng menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Định dạng từng mục trong menu */
+.menu li {
+    margin: 0 15px;
+}
+
+/* Change menu item color on hover and active */
+.menu li a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000; /* Default color for unselected items */
+    padding: 8px 0;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.menu li a:hover {
+    color: #8B0000; /* Dark red color on hover */
+}
+
+/* Active state */
+.menu li a.active {
+    color: #8B0000; /* Dark red color when active */
+}
+
+/* Blue underline for active menu item */
+.menu li a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #8B0000;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    border-radius: 2px;
+}
+
+/* Định dạng chung cho footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px 50px;
+    color: #333;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100px; /* Chiều cao cố định của footer */
+    flex-shrink: 0;    /* Đảm bảo footer không bị co lại */
+}
+/* Định dạng cho phần newsletter và contact trong footer */
+.footer .newsletter, .footer .contact {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer .newsletter h3, .footer .contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer .newsletter p, .footer .contact p {
+    margin: 5px 0;
+}
+
+.footer form {
+    display: flex;
+    align-items: center;
+}
+
+.footer input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+    outline: none;
+}
+
+.footer button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #555;
+}
+
+/* Định dạng phần contact */
+.footer .contact p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer .contact p::before {
+    margin-right: 8px;
+}
+
+/* Định dạng logo và header */
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    color: #f8f8f8;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+}
+
+.menu li {
+    padding: 0 12px;
+}
+
+.menu > li a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.others {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.others li {
+    padding: 0 12px;
+}
+
+/* Manager icon styling */
+.manager a i {
+    font-size: 1.5em; /* Kích thước biểu tượng quản lý */
+    color: #007BFF; /* Màu xanh cho biểu tượng quản lý */
+}
+
+.manager a:hover i {
+    color: #0056b3; /* Màu xanh đậm hơn khi hover */
+}
+
+/* Các định dạng khác */
+
+.center-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    background-color: #f8f8f8;
+}
+
+.center-image {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.home-title-block {
+    padding: 0 10px 10px;
+    scroll-margin-top: 80px;
+}
+
+.home-title {
+    font-weight: 600;
+    text-align: center;
+    font-size: 21px;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.menu-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Định dạng menu grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Định dạng từng item trong menu */
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+/* Đảm bảo rằng không có gạch chân cho liên kết */
+.menu-item a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: inherit; /* Giữ nguyên màu chữ */
+}
+
+.menu-item a:hover {
+    text-decoration: none; /* Xóa gạch chân khi hover */
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.menu-item .description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-size: 16px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-btn i {
+    margin-right: 5px;
+}
+
+.order-btn:hover {
+    background-color: #c0392b;
+}
+
+.pagination-container {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.page-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.page-button.active {
+    background-color: #f00;
+    color: #fff;
+}
+
+.order-link {
+    font-size: 18px;
+    color: #e74c3c; /* Màu đỏ cho tên món ăn */
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    font-weight: bold;
+}
+
+.order-link:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
+}

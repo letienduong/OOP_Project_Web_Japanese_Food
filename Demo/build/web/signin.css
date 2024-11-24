@@ -1,0 +1,72 @@
+/* Sign in FORM Container */
+#signin-form {
+    width: 400px;
+    margin: 20vh auto 6.4vh auto; /* Center vertically and horizontally */
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #ddd; /* Light border around the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Subtle shadow for depth */
+    padding: 25px 8px; /* Inner spacing */
+    min-height: 450px; /* Minimum height for the form */
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1); /* Smooth animation for transitions */
+}
+
+/* Form Styling */
+#signin-form form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+}
+
+/* Input Fields */
+#signin-form .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+#signin-form .form-control:focus {
+    z-index: 2;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Spacing for Inputs */
+#signin-form .form-signin input[type="text"], 
+#signin-form .form-signin input[type="password"] {
+    margin-bottom: 10px;
+}
+
+/* Submit Button Styling */
+#signin-form button[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+#signin-form button[type="submit"]:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Button Focus Effect */
+#signin-form button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(72, 180, 97, 0.5);
+}
+
+

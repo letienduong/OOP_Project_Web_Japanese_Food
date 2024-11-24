@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Demo/src/java/control/ManageControl.java</file>
+            <file>file:/C:/Demo/web/Menu.jsp</file>
+            <file>file:/C:/Demo/src/java/control/HomeServlet.java</file>
+            <file>file:/C:/Demo/web/profile.jsp</file>
+            <file>file:/C:/Demo/web/home.jsp</file>
+            <file>file:/C:/Demo/src/java/context/DBContext.java</file>
+            <file>file:/C:/Demo/web/manage.jsp</file>
+            <file>file:/C:/Demo/src/java/control/LogOutServlet.java</file>
+            <file>file:/C:/Demo/src/java/control/DeleteProduct.java</file>
+            <file>file:/C:/Demo/src/java/control/LoginServlet.java</file>
+            <file>file:/C:/Demo/src/java/dao/DAO.java</file>
+        </group>
+    </open-files>
+</project-private>

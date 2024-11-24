@@ -1,0 +1,114 @@
+/* CSS cho trang chi tiết món ăn */
+
+.food-detail-container {
+    display: flex;
+    max-width: 900px;
+    min-height: 500px;
+    margin: 80px auto 20px auto; /* Giảm khoảng cách phía dưới */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.food-image {
+    width: 45%; /* Giảm kích thước ảnh */
+    padding: 15px; /* Tạo khoảng cách xung quanh ảnh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-image img {
+    width: 100%;
+    height: auto; /* Để ảnh tự điều chỉnh theo chiều rộng */
+    max-height: 350px; /* Giới hạn chiều cao ảnh */
+    border-radius: 8px; /* Bo tròn các góc ảnh */
+    object-fit: cover;
+}
+
+.food-details {
+    padding: 20px; /* Giảm khoảng cách trong phần chi tiết */
+    width: 55%; /* Điều chỉnh lại chiều rộng để phù hợp với ảnh */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.food-details h2 {
+    font-size: 24px; /* Giảm kích thước tiêu đề */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.food-details p {
+    font-size: 16px; /* Giảm kích thước chữ trong phần mô tả */
+    margin: 10px 0;
+    line-height: 1.5; /* Khoảng cách dòng dễ nhìn hơn */
+}
+
+.price {
+    font-size: 20px; /* Kích thước chữ cho giá */
+    font-weight: bold;
+    color: #e63946;
+    margin: 15px 0;
+}
+
+/* Định dạng cho ô nhập liệu ghi chú */
+.note-label {
+    font-size: 16px; /* Giảm kích thước nhãn */
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #333;
+}
+
+.note-input {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 14px; /* Giảm kích thước chữ trong ô nhập */
+    line-height: 1.4;
+    font-family: inherit;
+}
+
+/* Nút đặt hàng và thêm vào giỏ hàng */
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.button-container button {
+    padding: 10px 18px; /* Giảm kích thước nút */
+    font-size: 15px; /* Giảm kích thước chữ trong nút */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-order {
+    background-color: #e63946;
+    color: #fff;
+    flex: 1;
+}
+
+.button-order:hover {
+    background-color: #d62828;
+}
+
+.button-cart {
+    background-color: #f1faee;
+    color: #333;
+    flex: 1;
+}
+
+.button-cart:hover {
+    background-color: #ddd;
+}
