@@ -1,4 +1,4 @@
--- Sử dụng cơ sở dữ liệu 'Wish'
+-- Sử dụng cơ sở dữ liệu 'web'
 Drop database web;
 create database web;
 USE web;
@@ -38,7 +38,7 @@ INSERT INTO category (cid, cname) VALUES
 -- Tạo bảng product trong MySQL
 drop table if exists product;
 CREATE TABLE product (
-  id INT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255),
   image VARCHAR(255),
   price DECIMAL(10,0),
