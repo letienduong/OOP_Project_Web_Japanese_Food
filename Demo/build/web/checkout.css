@@ -1,0 +1,116 @@
+
+/* Đặt khoảng cách giữa menu và container */
+.container {
+    display: block; /* Hiển thị dạng khối */
+    max-width: 800px; /* Giới hạn chiều rộng */
+    margin: 100px auto; /* Cách menu 20px và căn giữa container */
+    padding: 20px; /* Tạo padding bên trong container */
+    background-color: #fff; /* Nền trắng */
+    border-radius: 10px; /* Bo tròn góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+/* Tiêu đề trang */
+.container h2 {
+    font-size: 28px; /* Kích thước chữ lớn */
+    font-weight: bold; /* Chữ in đậm */
+    color: #d32f2f; /* Màu sắc nổi bật */
+    text-align: center; /* Căn giữa chữ */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    text-transform: uppercase; /* Chữ in hoa */
+}
+
+/* Phần Thông tin giao hàng */
+.delivery-options {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.delivery-options h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.delivery-options label {
+    font-size: 16px;
+    margin-right: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+#timeSlot {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+/* Ghi chú (Textarea) */
+textarea {
+    width: 100%;
+    height: 150px; /* Tăng chiều cao */
+    padding: 15px; /* Tăng khoảng cách bên trong */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+    resize: none; /* Không cho phép thay đổi kích thước */
+    font-size: 16px; /* Tăng kích thước chữ */
+    line-height: 1.5; /* Khoảng cách dòng rộng hơn */
+}
+
+/* Thông tin người nhận */
+.receiver-info {
+    margin-top: 30px;
+}
+
+.receiver-info h2 {
+    font-size: 20px;
+    color: #d32f2f;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.receiver-info .form-group {
+    margin-bottom: 15px;
+}
+
+.receiver-info .form-group label {
+    display: block; /* Đưa label lên trên input */
+    font-size: 16px; /* Tăng kích thước chữ */
+    margin-bottom: 5px; /* Tạo khoảng cách giữa label và input */
+    font-weight: bold; /* In đậm */
+    color: #333; /* Màu sắc nhấn nhá */
+}
+
+.receiver-info input {
+    width: 100%; /* Chiếm toàn bộ chiều ngang */
+    padding: 12px; /* Tăng khoảng cách bên trong */
+    border: 1px solid #ccc; /* Đường viền nhẹ */
+    border-radius: 8px; /* Bo tròn góc */
+    font-size: 16px; /* Tăng kích thước chữ */
+}
+
+
+/* Nút Xác Nhận */
+.btn-primary {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 100%; /* Nút chiếm toàn bộ chiều ngang */
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #b71c1c;
+}

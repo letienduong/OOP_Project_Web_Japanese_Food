@@ -1,0 +1,38 @@
+/* Dropdown Styles */
+.dropdown {
+    position: relative; /* Định vị dropdown */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Hiển thị ngay bên dưới biểu tượng */
+    left: 50%; /* Đặt menu vào giữa theo chiều ngang */
+    transform: translateX(-43%); /* Dịch menu để căn giữa */
+    background-color: #ccc; /* Nền xám */
+    opacity: 0; /* Ẩn menu mặc định */
+    visibility: hidden; /* Không hiển thị mặc định */
+    display: flex; /* Sắp xếp nội dung theo hàng ngang */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    z-index: 1000; /* Đảm bảo menu hiển thị trên cùng */
+    padding: 10px; /* Khoảng cách bên trong menu */
+    width: 200px; /* Tăng chiều rộng menu */
+    border-radius: 5px; /* Bo góc menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bóng mờ */
+    font-size: 0.8em; /* Cỡ chữ nhỏ hơn */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Hiệu ứng hiển thị/ẩn */
+}
+
+.dropdown-menu a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #333; /* Màu chữ */
+    padding: 8px 15px; /* Khoảng cách giữa các mục */
+    margin: 0 5px; /* Khoảng cách giữa các liên kết */
+    text-align: center; /* Căn giữa nội dung chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.dropdown-menu a:hover {
+    background-color: #bbb; /* Nền xám đậm khi hover */
+    border-radius: 3px; /* Bo góc nhẹ */
+}

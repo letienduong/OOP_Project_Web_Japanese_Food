@@ -1,0 +1,59 @@
+/* Căn giữa toàn bộ trang */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Đảm bảo chiều cao tối thiểu của trang */
+    text-align: center;
+    margin-top: 60px; /* Thêm khoảng cách từ đầu trang để nội dung thấp xuống */
+}
+
+/* Thiết kế cho phần thông báo thành công */
+.success-message {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Giới hạn chiều rộng của hộp thông báo */
+    width: 100%;
+}
+
+/* Tiêu đề thông báo */
+.success-message h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #28a745; /* Màu xanh lá cho trạng thái thành công */
+    margin-bottom: 20px;
+}
+
+/* Nội dung thông báo */
+.success-message p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Các nút hành động */
+.action-buttons a {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.action-buttons .btn-primary {
+    background-color: #007bff; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+}
+
+.action-buttons a:hover {
+    opacity: 0.8; /* Hiệu ứng khi di chuột vào nút */
+}
+
+/* Thêm một chút khoảng cách dưới các nút */
+.action-buttons {
+    margin-top: 20px;
+}

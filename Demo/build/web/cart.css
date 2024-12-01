@@ -1,0 +1,45 @@
+/* Đặt khoảng cách giữa menu và container */
+.container {
+    display: block; /* Hiển thị khối */
+    max-width: 1200px; /* Giới hạn chiều rộng */
+    margin: 100px auto auto; /* Đặt khoảng cách trên (60px), giữa, dưới */
+    padding: 0 20px; /* Tạo padding bên trái và phải */
+}
+
+/* Tiêu đề "Chi tiết Giỏ Hàng" */
+.container h2 {
+    font-size: 28px; /* Kích thước chữ lớn */
+    font-weight: bold; /* Chữ in đậm */
+    color: #d32f2f; /* Màu sắc nổi bật */
+    text-transform: uppercase; /* Chữ in hoa */
+    border-bottom: 2px solid #d32f2f; /* Gạch chân */
+    padding-bottom: 10px; /* Khoảng cách giữa chữ và gạch chân */
+    margin-bottom: 30px; /* Khoảng cách dưới tiêu đề */
+}
+
+/* Bảng giỏ hàng */
+.table {
+    width: 100%; /* Chiếm toàn bộ chiều ngang container */
+    margin: 0; /* Xóa căn giữa bảng */
+    background-color: #fff; /* Màu nền trắng */
+    border-radius: 8px; /* Bo góc bảng */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+/* Nút Thanh Toán */
+.btn-primary {
+    background-color: #d32f2f; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 12px 24px; /* Kích thước nút */
+    border-radius: 8px; /* Bo tròn góc */
+    font-size: 16px; /* Kích thước chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    border: none; /* Xóa viền nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng hover */
+    margin-top: 20px; /* Khoảng cách trên */
+    margin-bottom: 20px !important; /* Khoảng cách dưới (cách footer 20px) */
+}
+
+.btn-primary:hover {
+    background-color: #b71c1c; /* Đổi màu khi hover */
+}
